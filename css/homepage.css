@@ -1,0 +1,64 @@
+/* NAVBAR STYLES */
+.navbar form {
+  position: relative;
+}
+
+.navbar form input {
+  padding-left: 2%;
+  border-right: 0 !important;
+  border-left: 0 !important;
+}
+
+.navbar form i {
+  -webkit-text-stroke: 1px white;
+  font-size: 18px;
+}
+
+/* HERO SECTION STYLES */
+#hero-section .row ul li {
+  list-style-type: disc;
+  font-size: 14px;
+}
+
+#own-text {
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+#app-section .download-icons img {
+  margin-top: -70px;
+}
+
+.head-wrapper {
+  position: relative;
+}
+.bg-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background: var(--primary-color);
+  z-index: -50;
+  border-bottom-left-radius: 100%;
+}
+
+/* FOOTER STYLES */
+footer .social-media a {
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+footer .social-media a i {
+  color: black;
+}
+
+footer .social-media i.fa-twitter:hover,
+footer .social-media i.fa-facebook:hover,
+footer .social-media i.fa-linkedin:hover {
+  color: #1da1f2;
+}
+
+footer .social-media i.fa-youtube:hover {
+  color: #ff0000;
+}

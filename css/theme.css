@@ -1,0 +1,41 @@
+/* VARIABLES */
+:root {
+  --primary-color: #34a853;
+  --primary-light-color: #eaf5ed;
+  --secondary-color: #f4f4f4;
+  --footer-bg-color: #00b1165e;
+}
+
+/* SECTIONS*/
+section {
+  margin-top: 8%;
+}
+
+#app-section {
+  background: var(--secondary-color);
+}
+
+#primary-button,
+#secondary-button {
+  font-size: 15px;
+}
+#primary-button {
+  background: var(--primary-color);
+  color: white;
+}
+#secondary-button {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color) !important;
+}
+#secondary-button:hover {
+  color: white !important;
+  background: var(--primary-color);
+}
+
+footer {
+  background: var(--footer-bg-color);
+}
+
+footer i {
+  color: #089508;
+}
