@@ -1,127 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eGrocery</title>
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="font-awesome/css/all.min.css" type="text/css">
-  <link rel="stylesheet" href="css/theme.css" type="text/css">
-  <link rel="stylesheet" href="css/homepage.css" type="text/css">
-  <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./font-awesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/theme.css" type="text/css">
+    <link rel="stylesheet" href="./css/auth.css" type="text/css">
 </head>
-
 <body>
-  <main>
-    <!-- Header -->
-    <div class="head-wrapper">
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-          <div class="container px-5 align-items-center pt-3">
-            <a class="navbar-brand mb-1" href="./index.html"><strong>eGrocery</strong></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="/categories">Categories</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/top-sellers">Top Sellers</a>
-                </li>
-              </ul>
-              <form action="#">
-                <div class="input-group">
-                  <span class="input-group-text bg-white text-secondary rounded-end-3"><i
-                      class="fas fa-search text-secondary"></i></span>
-                  <input type="text" placeholder="Search" class="form-control rounded-start-3 py-2 border shadow-none">
-                  <span class="input-group-text bg-white text-secondary border-end-0 rounded-end-3 ps-0 pe-1">|</span>
-                  <span title="Cart" class="input-group-text bg-white text-secondary rounded-end-3 border-start-0"><a
-                      href="/cart" class="mt-1"><i class="fas fa-shopping-cart"></i></a></span>
+
+    <main>
+       <div class="signup-section d-flex">
+            <div class="left-container d-flex justify-content-center align-items-center">
+                <img src="./assets/misc/signup-page.png" alt="">
+            </div>
+            <div class="right-container d-flex justify-content-evenly align-items-center">
+                <div class="h-100 border-0 w-100">
+                    <form action="./pages/homepage.html" class="d-flex h-100 flex-column justify-content-center">
+                        <div class="form-heading d-flex justify-content-center mb-4">
+                            <img src="./assets/logo.png" id="logo" alt="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="first-name">Enter your name</label>
+                            <div class="d-flex gap-2">
+                                <input type="text" required class="form-control" name="first-name" id="first-name" placeholder="First name">
+                                <input type="text" required class="form-control" name="last-name" id="last-name" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email-address">Email Address</label>
+                            <input type="email" required class="form-control" placeholder="Email address" name="email" id="email-address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone-no">Phone Number</label>
+                            <div class="d-flex">
+                                <select name="phone-code" required>
+                                    <option value="92" selected>+92</option>
+                                    <option value="91">+91</option>
+                                    <option value="90">+90</option>
+                                    <option value="89">+89</option>
+                                </select>
+                                <input type="number" required placeholder="Phone Number" class="form-control ms-2" name="phone-no" id="phone-no">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="gender">Gender</label>
+                            <div class="d-flex gap-4">
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="male">
+                                <label class="form-check-label" for="male">
+                                    Male
+                                </label>
+                                </div>
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="female">
+                                <label class="form-check-label" for="female">
+                                    Female
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password">Password</label>
+                            <input type="password" required name="password" placeholder="Password" class="form-control" id="password">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" required type="checkbox" value="" id="agree">
+                            <label class="form-check-label" for="agree">
+                              Agree to terms and conditions
+                            </label>
+                        </div>
+                        <button class="btn btn-block mt-2 py-2">Register Now</button>
+
+                        <div class="text-center mt-4 pb-4">
+                            <p>Already have an account? <strong><a href="./pages/login.html">Login</a></strong></p>
+                        </div>
+                    </form>
                 </div>
-              </form>
             </div>
-          </div>
-        </nav>
-      </header>
+       </div>
+    </main>
 
-      <!-- Hero section -->
-      <section id="hero-section">
-        <div class="container px-5">
-          <div class="row">
-            <div class="col-md-6">
-              <h1 class="display-3 fw-bold mb-4">Your <span id="own-text">OWN</span> grocery store</h1>
-              <p class="w-75 mb-4">We help you buy fresh grocery from home with instant delivery and cheap prices.</p>
-              <div class="d-flex align-items-center">
-                <button class="btn py-2 me-3" id="primary-button"><a href="/signup">Register Now</a></button>
-                <button class="btn py-2" id="secondary-button"><a href="/categories">Explore Categories</a></button>
-              </div>
-              <p class="mb-0 mt-4">We are offering:</p>
-              <ul>
-                <li>Cheaper & Affordable prices</li>
-                <li>Instant payment & Fast delivery</li>
-                <li>Best Quality</li>
-                <li>Fresh and natural products</li>
-              </ul>
-            </div>
-            <div class="col-md-6 d-flex justify-content-center align-items-baseline">
-              <img src="assets/hero-section-pic.png" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="bg-shape"></div>
-    </div>
-
-    <!-- APP SECTION -->
-    <div id="app-section">
-      <section>
-        <div class="container row py-5 mx-auto">
-          <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-            <h1 class="fw-bold text-center mb-3">Download Our App On Google Play & App Store</h1>
-            <p class="text-secondary">Lets help us to groom the grocery delivery system.</p>
-            <div class="d-flex align-items-center download-icons">
-              <img src="assets/google-play.png" class="me-3" width="200px" style="height: 200px" alt="">
-              <img src="assets/app-store.png" width="200px" style="height: 220px" alt="">
-            </div>
-          </div>
-          <div class="col-md-6 d-flex justify-content-center align-items-center">
-            <img src="assets/app-screen.png" width="320px" alt="">
-          </div>
-        </div>
-      </section>
-    </div>
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container pt-5 pb-4">
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="left">
-          <h3 class="mb-0"><i class="fa fa-phone-alt"></i> (053) 111-128-128</h3>
-          <p class="w-50 mt-4 fst-italic"><strong>eGrocery</strong> is a multi-national company, which aims better
-            future of online food delivery services.</p>
-          <p class="small"><i class="fa fa-copyright text-dark"></i> Copyright 2022</p>
-        </div>
-        <div class="right d-flex flex-column">
-          <strong class="mb-1"><i class="fa fa-envelope"></i> mjunaid.swe@gmail.com</strong>
-          <strong><i class="fa fa-map-marker"></i> Islamabad, Pakistan @2022</strong>
-          <div class="d-flex mt-4 social-media">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

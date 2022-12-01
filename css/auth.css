@@ -1,0 +1,73 @@
+.signup-section {
+    height: 100vh;
+}
+
+.signup-section .left-container {
+    background: var(--primary-color);
+    width: 60%;
+}
+
+.signup-section .right-container {
+    border-radius: 3px;
+    width: 40%;
+    overflow-y: scroll;
+}
+
+.signup-section .right-container .w-100 {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+}
+
+.signup-section form select {
+    background: #ced4da3d;
+    border: 1px solid #0000001c !important; 
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.signup-section form input.form-control {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    border: 1px solid #0000001c; 
+    background: #ced4da3d;
+    border-radius: 3px;
+}
+
+.signup-section form input.form-control:focus {
+    background-color: var(--primary-light-color);
+    border: 1px solid #94ffb1;
+    border-radius: 3px;
+}
+
+.signup-section form .mb-3 > label {
+    /* margin-top: 14px; */
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.signup-section form button, 
+.signup-section form button:hover, 
+.signup-section form button:active, 
+.signup-section form button:focus {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-radius: 3px;
+}
+
+.signup-section .login-platforms button {
+    text-align: left;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.signup-section .login-platforms button i {
+    margin-right: 8px;
+}
+
+.signup-section .login-platforms button i.fa-facebook,
+.signup-section .login-platforms button i.fa-instagram {
+    font-size: 18px;
+}

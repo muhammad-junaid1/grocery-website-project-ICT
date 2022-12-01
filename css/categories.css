@@ -1,0 +1,60 @@
+
+#categories-section .col-md-4 {
+    margin-top: 25px;
+}
+
+#categories-section .card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #eaf5ed7c;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    padding-bottom: 0 !important;
+}
+
+#categories-section .card:hover {
+    background-color: transparent;
+}
+
+#categories-section .card h5 {
+    background: rgba(0, 0, 0, 0.651);
+    border-radius: 5px;
+    padding: 8px 14px;
+    color: white;
+    transition: all 0.1s ease-out;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+
+#categories-section .card#dairy {
+    background-image: url("../assets/categories-bg/dairy.jpg");
+}
+#categories-section .card#vegetables {
+    background-image: url("../assets/categories-bg/vegetables.jpg");
+}
+#categories-section .card#stationery {
+    background-image: url("../assets/categories-bg/stationery.jpg");
+}
+#categories-section .card#beverages {
+    background-image: url("../assets/categories-bg/beverages.jpg");
+}
+#categories-section .card#household {
+    background-image: url("../assets/categories-bg/household.jpg");
+}
+#categories-section .card#beauty {
+    background-image: url("../assets/categories-bg/beauty.jpg");
+}
+#categories-section .card#bakery {
+    background-image: url("../assets/categories-bg/bakery.jpg");
+}

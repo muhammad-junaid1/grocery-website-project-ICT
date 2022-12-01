@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../font-awesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/theme.css" type="text/css">
+    <link rel="stylesheet" href="../css/auth.css" type="text/css">
+</head>
+<body>
+
+    <main>
+       <div class="signup-section d-flex">
+            <div class="left-container d-flex justify-content-center align-items-center">
+                <img src="../assets/misc/login-page.png" alt="">
+            </div>
+            <div class="right-container d-flex justify-content-evenly align-items-center">
+                <div class="h-100 border-0 w-100">
+                    <form action="./homepage.html" class="d-flex h-100 flex-column justify-content-center">
+                        <div class="form-heading d-flex justify-content-center mb-4">
+                            <img src="../assets/logo.png" id="logo" alt="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="username">Username</label>
+                            <input type="text" required class="form-control" placeholder="Username" name="username" id="username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password">Password</label>
+                            <input type="password" required name="password" placeholder="Password" class="form-control" id="password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="repeat-password">Repeat Password</label>
+                            <input type="password" required name="repeat-password" placeholder="Repeat password" class="form-control" id="repeat-password">
+                        </div>
+                        <div>
+                            <p class="text-primary small"><a href="#">Forgot Password?</a></p>
+                        </div>
+                        <button class="btn btn-block mt-2">Log In</button>
+                        <div class="text-center mt-4 pb-4">
+                            <p>Haven't created yet? <strong><a href="../index.html">Signup</a></strong></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+       </div>
+    </main>
+
+</body>
+</html>
