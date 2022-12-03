@@ -1,0 +1,66 @@
+#cart-section table {
+    border-radius: 10px;
+}
+
+#cart-section table .td-container p {
+    font-size: 15px;
+}
+
+#cart-section table td i {
+    color: red;
+}
+
+#cart-section table td img {
+    width: 120px;
+    border-radius: 5px;
+} 
+
+#cart-section p {
+    margin-bottom: 0;
+}
+
+#cart-section table td {
+    vertical-align: middle;
+}
+
+#cart-section table .quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+
+#cart-section table .quantity-container button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#cart-section table .quantity-value {
+    padding: 4px 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid rgb(172, 170, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+#cart-section .summary-container {
+    margin-top: 55px;
+    background: var(--primary-light-color);
+    border: 1px dashed var(--primary-color);
+}
+
+#cart-section .summary-container p {
+    font-size: 15px;
+}
+
+#cart-section .summary-container hr {
+    border-color: lime;
+    border-width: 2px;
+}
+
+#cart-section .summary-container button {
+    font-size: 15px;
+}

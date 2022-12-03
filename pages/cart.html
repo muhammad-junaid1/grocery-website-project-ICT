@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../font-awesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/theme.css" type="text/css">
+    <link rel="stylesheet" href="../css/cart.css" type="text/css">
+</head>
+<body>
+  
+    <main>
+
+    <div class="container pb-4 pt-5" id="cart-section">
+        <div class="row">
+            <div class="col-md-8">
+                <h3>My Cart</h3>
+                <table class="table table-responsive mt-4">
+                  <thead>
+                    <tr>
+                      <th>Image</th>
+                      <th>Item</th>
+                      <th>Quantity</th>
+                      <th colspan="2">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img src="../assets/categories-bg/household.jpg" alt="">
+                      </td>
+                      <td>
+                        <div class="td-container">
+                            <p>Import Quality Mug</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="quantity-container">
+                          <button class="mb-0 btn ps-0">-</button>
+                          <div class="quantity-value">
+                            3
+                          </div>
+                          <button class="mb-0 btn">+</button>
+                        </div>
+                      </td>
+                      <td>
+                        Rs. 250
+                      </td>
+                      <td><button class="btn"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="../assets/categories-bg/beauty.jpg" alt="">
+                      </td>
+                      <td>
+                        <div class="td-container">
+                            <p>Lux Soap per 130gm</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="quantity-container">
+                          <button class="mb-0 btn ps-0">-</button>
+                          <div class="quantity-value">
+                            1
+                          </div>
+                          <button class="mb-0 btn">+</button>
+                        </div>
+                      </td>
+                      <td>
+                        Rs. 110
+                      </td>
+                      <td><button class="btn"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="../assets/categories-bg/stationery.jpg" alt="">
+                      </td>
+                      <td>
+                        <div class="td-container">
+                            <p>Gel Pen 4 Pieces</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="quantity-container">
+                          <button class="mb-0 btn ps-0">-</button>
+                          <div class="quantity-value">
+                            1
+                          </div>
+                          <button class="mb-0 btn">+</button>
+                        </div>
+                      </td>
+                      <td>
+                        Rs. 360
+                      </td>
+                      <td><button class="btn"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="../assets/categories-bg/vegetables.jpg" alt="">
+                      </td>
+                      <td>
+                        <div class="td-container">
+                            <p>Apples 1kg</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="quantity-container">
+                          <button class="mb-0 btn ps-0">-</button>
+                          <div class="quantity-value">
+                            1
+                          </div>
+                          <button class="mb-0 btn">+</button>
+                        </div>
+                      </td>
+                      <td>
+                        Rs. 800
+                      </td>
+                      <td><button class="btn"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            <div class="col-md-4 d-flex flex-column">
+                <div class="container pt-3 pb-4 shadow px-4 summary-container">
+                  <h5 class="fw-bold mb-2">Summary</h5>
+                  <div class="summary-content">
+                    <div class="d-flex justify-content-between mb-2">
+                        <p class="text-muted">Order total</p>
+                        <strong class="text-muted">Rs. 1520</strong>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <p class="text-muted">Weight</p>
+                        <strong class="text-muted">5.2 kg</strong>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <p class="text-muted">Shipping</p>
+                        <strong class="text-muted">Rs. 200</strong>
+                    </div>
+                    <div class="d-flex justify-content-between mb-4">
+                        <p class="text-muted">My Savings</p>
+                        <strong class="text-muted">Rs. 0</strong>
+                    </div>
+
+                    <hr class="mb-0">
+                    <div class="d-flex justify-content-between py-2">
+                        <p class="text-muted mb-0">Total Amount</p>
+                        <strong class="text-muted">Rs. 1720</strong>
+                    </div>
+                    <hr class="mt-0 mb-4">
+                    <em class="fw-bold text-secondary">Note:</em>
+                    <p class="small">All prices are inclusive of taxes, where applicable. The prices of all weighted items are subject to change at the time of weighing.</p>
+                  </div>
+                <div class="d-flex mt-5 justify-content-between">
+                    <button class="btn btn-dark px-3 rounded-1"><a href="./categories.html">Go back</a></button>
+                    <button class="btn btn-lg rounded-1 px-4" id="primary-button"><a href="./checkout.html">Proceed to payment</a></button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+  </main>
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="container pt-5 pb-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="left">
+          <h3 class="mb-0"><i class="fa fa-phone-alt"></i> (053) 111-128-128</h3>
+          <p class="w-50 mt-4 fst-italic"><strong>Soda Salaf</strong> is a multi-national company, which aims better
+            future of online food delivery services.</p>
+          <p class="small"><i class="fa fa-copyright"></i> Copyright 2022</p>
+        </div>
+        <div class="right d-flex flex-column">
+          <p class="mb-1"><i class="fa fa-envelope"></i> mjunaid.swe@gmail.com</p>
+          <p><i class="fa fa-map-marker"></i> Islamabad, Pakistan @2022</p>
+          <div class="d-flex mt-4 social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

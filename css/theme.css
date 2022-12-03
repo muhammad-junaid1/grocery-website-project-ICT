@@ -5,6 +5,10 @@
   --secondary-color: #f4f4f4;
 }
 
+body {
+  background-color: var(--primary-light-color);
+}
+
 #logo {
   width: 150px;
 }
@@ -63,11 +67,6 @@ section {
   background: var(--primary-color);
 }
 
-/* Categories */
-#categories-section .card {
-  height: 200px;
-}
-
 /* FOOTER STYLES */
 footer {
   background: var(--primary-color);
@@ -84,5 +83,5 @@ footer .social-media a {
 }
 
 footer .social-media a i {
-  color: #67df87;
+  color: #86efa2;
 }
