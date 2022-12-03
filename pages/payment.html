@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../font-awesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/theme.css" type="text/css">
+    <link rel="stylesheet" href="../css/payment.css" type="text/css">
+</head>
+<body>
+
+    <main>
+       <div id="payment-section" class="container py-5">
+        <h4>Choose payment method below</h4>
+        <div class="payment-header mt-4 row gx-5">
+            <div class="col-md-4">
+                <div class="payment-option active py-4">
+                    <img src="../assets/payment-options/credit-card.png" alt="">
+                    <p>Pay with Debit card</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="payment-option py-4">
+                    <img src="../assets/payment-options/paypal.png" alt="">
+                    <p>Pay with Paypal</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="payment-option py-4">
+                    <img src="../assets/payment-options/amazon.png" alt="">
+                    <p>Pay with Amazon</p> 
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 d-flex flex-column mt-5">
+                <h5 class="fw-bold">Billing Info</h5>
+                <form action="">
+                    <label for="fullname">FULL NAME</label>
+                    <input type="text" class="form-control" name="full-name" id="fullname" placeholder="Full Name">
+                    <label for="shipping-address">SHIPPING ADDRESS</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Shipping address" class="form-control">
+                        <span class="input-group-text bg-white text-secondary rounded-end-3 border-start-0"><i class="fas fa-map-marker"></i></span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="w-75">
+                            <label for="city-code">CITY</label>
+                            <input type="text" class="form-control" name="city-code" id="city-code" placeholder="City Code">
+                        </div>
+                        <div class="ms-3 w-25">
+                            <label for="zip">ZIP</label>
+                            <input type="text" class="form-control" name="zip" id="zip" placeholder="Zip">
+                        </div>
+                    </div>
+                    <label for="contact">CONTACT</label>
+                    <input type="number" class="form-control" name="contact" id="contact" placeholder="contact">
+                    <label for="email">EMAIL</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                </form>
+            </div>
+            <div class="col-md-6 d-flex flex-column mt-5">
+                <h5 class="fw-bold">Credit Card Info</h5>
+                <form action="">
+                    <label for="fullname">CARD HOLDER NAME</label>
+                    <input type="text" class="form-control" name="full-name" id="fullname" placeholder="Name">
+                    <label for="card-no">CARD NUMBER</label>
+                    <input type="text" id="card-no" name="card-no" placeholder="Card Number" class="form-control">
+                    <div class="d-flex justify-content-between">
+                        <div class="w-50">
+                            <label for="exp-month">EXP. MONTH</label>
+                            <input type="text" class="form-control" name="exp-month" id="exp-montj" placeholder="Exp. Month">
+                        </div>
+                        <div class="ms-3 w-50">
+                            <label for="exp-year">EXP. YEAR</label>
+                            <input type="text" class="form-control" name="exp-year" id="exp-year" placeholder="Exp. Year">
+                        </div>
+                    </div>
+                    <label for="cvc-no">CVC NUMBER</label>
+                    <input type="text" class="form-control" name="cvc-no" id="cvc-no" placeholder="CVC Number">
+                </form>
+            </div>
+        </div>
+
+
+        <div class="d-flex justify-content-between payment-buttons mt-4">
+            <button class="btn btn-outline-secondary py-2"><a href="./categories.html">Continue Shopping</a></button>
+            <button class="btn btn-dark py-2" id="pay-button"><a href="./homepage.html">Place and Order</a></button>
+        </div>
+       </div>
+    </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container pt-5 pb-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="left">
+          <h3 class="mb-0"><i class="fa fa-phone-alt"></i> (053) 111-128-128</h3>
+          <p class="w-50 mt-4 fst-italic"><strong>Soda Salaf</strong> is a multi-national company, which aims better
+            future of online food delivery services.</p>
+          <p class="small"><i class="fa fa-copyright"></i> Copyright 2022</p>
+        </div>
+        <div class="right d-flex flex-column">
+          <p class="mb-1"><i class="fa fa-envelope"></i> mjunaid.swe@gmail.com</p>
+          <p><i class="fa fa-map-marker"></i> Islamabad, Pakistan @2022</p>
+          <div class="d-flex mt-4 social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

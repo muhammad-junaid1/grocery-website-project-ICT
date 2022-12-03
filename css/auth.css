@@ -41,12 +41,6 @@
     border-radius: 3px;
 }
 
-.signup-section form .mb-3 > label {
-    /* margin-top: 14px; */
-    margin-bottom: 4px;
-    font-weight: 600;
-}
-
 .signup-section form button, 
 .signup-section form button:hover, 
 .signup-section form button:active, 
